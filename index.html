@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+
+<head>
+	<meta charset="UTF-8"> <!-- padrão html5 segundo o livro -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- padrão html5 segundo o bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- padrão html5 segundo o bootstrap -->
+	<title>Lucky Challenge</title>
+    <link href="img/icon.ico" rel="icon"/> <!-- link rel icon para adicionar icone -->
+    <link href="css/Layout.css" rel="stylesheet" /> <!-- link rel stylesheet para adicionar folha de estilo -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- link rel stylesheet para adicionar folha de estilo -->
+</head>
+
+<body>
+    <!-- Ínicio da Pagina Inicial -->
+    <section id="Inicio" >
+
+        <header class="page-header"> <!-- Cabeçalho -->
+            <h1 class="h1 text-center">Lucky Challenge</h1>
+        </header>
+        <div class="container bg-ceu"> <!-- Div container do Bootstrap -->          
+            <menu class="jumbotron well"> <!-- Jumbotron do Bootstrap -->
+                    <p><a class="btn btn-lg btn-warning btnJogar btn-block" href="#" role="button">Jogar</a></p> <!-- btn com funcion hide() todos os section e fadeToggle() para o sectionJogo -->
+                    <p><a class="btn btn-lg btn-default btnAjuda btn-block" href="#" role="button">Ajuda</a></p> <!-- btn com funcion hide() todos os section e fadeToggle() para o sectionAjuda -->
+                    <p><a class="btn btn-lg btn-default btnSobre btn-block" href="#" role="button">Sobre</a></p> <!-- btn com funcion hide() todos os section e fadeToggle() para o sectionSobre (Adson) -->
+            </menu>
+        </div>    
+        <footer class="footer"> <!-- Rodapé -->
+            <h5 class="text-muted text-center"> &copy; Desenvolvido por TANJ</h5>
+        </footer>
+    </section>
+    <!-- Fim da Pagina Inicial -->
+
+
+    <!-- Início da Pagina Ajuda -->
+    <section id="Ajuda" hidden>
+        <header class="page-header"> <!-- Cabeçalho -->
+            <h1 class="h1 text-center">Lucky Challenge</h1>
+        </header>
+        <div class="container">  <!-- Div container do Bootstrap -->
+            <div  class="well media"> <!-- Div com classe media do Bootstrap para alinhar figura e texto -->
+                <aside class="pull-left media-object"> <!-- div com valor semântico segundo o livro alinhado a esquerda pelo Bootstrap -->
+                    <img src="img/int.jpg" class="img-circle" /> <!-- imagem circular -->
+                </aside>
+                <article class="media-body"> <!-- div de valor semântico para um "artigo" -->
+                <header class="panel-heading media-heading">  <!-- cabeçalho do "artigo" -->
+                    <h1 class="h1">Ajuda</h1> <!-- titulo -->
+                    <small class="text-muted">Instruções, dicas e regras</small> <!-- subtitulo -->
+                </header>
+                <div class="panel-body scrollbar"> <!-- corpo do artigo, classe scrollbar define a altura fixa desse div e se o conteudo ultrapassar ele cria a scrollbar "overflow-y:scroll;" -->         
+                    <p class="text-justify "> <!-- paragrafo -->
+                        Lucky Challenge é um jogo de azar. Você deve derrotar cinco desafios utilizando o famoso pedra-papel-tesoura-lagarto-spock. Se você não o conhece:
+                    </p>
+                    <p class="alert alert-warning text-justify"> <!-- paragrafo em alert formatado pelo Bootstrap -->
+                    Pedra-papel-tesoura-lagarto-Spock é uma expansão do clássico método de seleção em jogo de pedra-papel-tesoura. Atua sob o mesmo princípio básico, mas inclui outras duas armas adicionais: o lagarto e Spock. Isso reduz as chances de uma rodada terminar em um empate. O jogo foi inventado por Sam Kass e Karen Bryla, como "Rock Paper Scissors Lizard Spock".
+                    O jogo foi mencionado em quatro episódios da série norte americana <em>The Big Bang Theory</em>. De acordo com uma entrevista com Kass, os produtores da série não pediram permissão para usar o jogo, mas, mais tarde, ele foi referenciado em um episódio da quinta temporada.</p>
+                    <h3>As regras são simples:</h3>
+                    <ul class="list-group"> <!-- lista formatada pelo Bootstrap -->
+                        <li class="list-group-item list-group-item-text">Tesoura corta papel</li>
+                        <li class="list-group-item list-group-item-text">Papel cobre pedra</li>
+                        <li class="list-group-item list-group-item-text">Pedra esmaga lagarto</li>
+                        <li class="list-group-item list-group-item-text">Lagarto envenena Spock</li>
+                        <li class="list-group-item list-group-item-text">Spock derrete tesoura</li>
+                        <li class="list-group-item list-group-item-text">Tesoura decapita lagarto</li>
+                        <li class="list-group-item list-group-item-text">Lagarto come papel</li>
+                        <li class="list-group-item list-group-item-text">Papel refuta Spock</li>
+                        <li class="list-group-item list-group-item-text">Spock vaporiza pedra</li>
+                        <li class="list-group-item list-group-item-text">Pedra quebra tesoura</li>
+                    </ul>
+                </article>  
+                <button class="btnVoltar btn btn-default">Voltar</button> <!-- btn com funcion hide() todos os section e fadeToggle() para o sectionInicio -->      
+            </div>
+        </div>
+        <footer class="footer">  <!-- Rodapé -->
+            <h5 class="text-muted text-center"> &copy; Desenvolvido por TANJ</h5>
+        </footer>
+    </section>
+    <!-- Fim da Pagina Ajuda -->
+
+
+    <!-- Início da Pagina Sobre (Pontes) -->
+    <section id="SobrePontes" hidden>
+        <header class="page-header"> <!-- cabeçalho -->
+            <h1 class="h1 text-center">Lucky Challenge</h1>
+        </header>
+        <div class="container">  <!-- div personalizada pelo bootstrap -->  
+            <div  class="well media"> <!-- div personalizado pelo bootstrap (segui o mesmo principio das sections ajuda, e outras sobre) -->
+                <aside class="pull-left media-object text-center"> <!-- div semantico fixo à esquerda pelo Bootstrap (segui o mesmo principio das sections ajuda, e outras sobre) -->
+                        <img src="img/pontes.jpg" class="img-circle" /><br /> <!-- imagem principal -->
+                        <img src="img/adson.jpg" class="img-circle this btnAdson" width="50" /> <!-- imagem com função click para ir hide() section e mostrar a section referente -->
+                        <img src="img/bento.jpg" class="img-circle this btnBento" width="50" /> <!-- imagem com função click para ir hide() section e mostrar a section referente -->
+                        <img src="img/indio.jpg" class="img-circle this btnIndio" width="50"/> <!-- imagem com função click para ir hide() section e mostrar a section referente -->
+                    </aside>
+                <article class="media-body">  <!-- igual a section anterior -->              
+                    <header class="panel-heading media-heading">  <!-- igual a section anterior -->    
+                        <h1 class="h1">Felipe Pontes</h1> 
+                        <small class="text-muted">Desenvolvedor Web e Windows (Responsável pelas Imagens)</small>
+                    </header>
+                    <div class="panel-body scrollbar">  <!-- igual a section anterior -->               
+                        <p class="text-justify">Paciente, mas idiota. Organizado
+                        , mas leso. Dedicado, mas atrasado. 
+                        Qualidade, mas defeito. Oi, este é Felipe Pontes. Vive há 4/25 de um século. 
+                        Gosta de matemática, esportes e trabalhar (wtf?).</p>
+                        <blockquote class="blockquote-reverse">  <!-- blockquote formatado pelo bootstrap fixo a direita -->    
+                            <p>"Viva o momento [...]. O amanhã cuidará de si mesmo."</p>  <!-- citação -->    
+                            <footer>John Grisham</footer> <!-- referencia da "citação" (blockquote) -->
+                        </blockquote>
+                    </div>
+                </article>
+                <button class="btn btn-default btnVoltar">Voltar</button>  <!-- igual a section anterior -->         
+            </div>
+        </div>
+        <footer class="footer"> <!-- rodapé -->
+            <h5 class="text-muted text-center"> &copy; Desenvolvido por TANJ</h5>
+        </footer>
+    </section>
+    <!-- Fim da Pagina Sobre (Pontes) -->
+
+
+    <!-- Início da Pagina Sobre (Adson) -->
+    <section id="SobreAdson" hidden> 
+        <header class="page-header">  <!-- igual a section anterior -->    
+            <h1 class="h1 text-center">Lucky Challenge</h1> 
+        </header>
+
+        <div class="container">  <!-- igual a section anterior -->        
+            <div  class="well media">
+                <aside class="pull-left media-object text-center">
+                    <img src="img/adson.jpg" class="img-circle" /><br />
+                    <img src="img/pontes.jpg" class="img-circle this btnPontes" width="50" />
+                    <img src="img/bento.jpg" class="img-circle this btnBento" width="50" />
+                    <img src="img/indio.jpg" width="50" class=" img-circle this btnIndio" />
+                </aside>
+                <article class="media-body">
+                <header class="panel-heading media-heading">
+                        <h1 class="h1">Adson Gabriel</h1>
+                        <small class="text-muted">Desenvolvedor Web e Windows (Criador de Bugs)</small>
+                </header>
+                <div class="panel-body scrollbar">           
+                    <p class="text-justify">Me chamo Adson, tenho 15 anos ,sou do curso de informática p/ Internet ,Sou bastante preguiçoso porém busco ser responsável ,Gosto de todo tipo de música e dança, gosto de jogos, Gosto de esportes , principalmente basquete , não gosto de deixar ninguém na "mão", tento não ser aquela criatura "perfeita" em tudo, mas busco de tudo saber um pouco.</p>
+                </div>
+                </article>  
+                <button class="btn btn-default btnVoltar">Voltar</button>  
+           </div>    
+        </div>
+
+        <footer class="footer">  <!-- igual a section anterior -->    
+            <h5 class="text-muted text-center"> &copy; Desenvolvido por TANJ</h5>
+        </footer>
+    </section>
+    <!-- Fim da Pagina Sobre (Adson) -->
+
+
+    <!-- Início da Pagina Sobre (Bento) -->
+    <section id="SobreBento" hidden>
+        <header class="page-header">  <!-- igual a section anterior -->    
+            <h1 class="h1 text-center">Lucky Challenge</h1>
+        </header>
+
+        <div class="container">  <!-- igual a section anterior -->        
+            <div  class="well media">
+                <aside class="pull-left media-object text-center">
+                    <img src="img/bento.jpg" class="img-circle" /><br />
+                    <img src="img/adson.jpg" class="img-circle this btnAdson" width="50" />
+                    <img src="img/pontes.jpg" class="img-circle this btnPontes" width="50" />
+                    <img src="img/indio.jpg" width="50" class=" img-circle this btnIndio" />
+                </aside>
+                <article class="media-body">
+                <header class="panel-heading  media-heading">
+                        <h1 class="h1">Francisco Bento</h1>
+                        <small class="text-muted">Desenvolvedor Web e Windows (F. O. D. A)</small>
+                </header>
+                <div class="panel-body scrollbar">       
+                    <p class="text-justify">Quem eu sou? Difícil definir. Poderia tentar dizendo: Meu nome é Francisco Bento, tenho 15 anos e faço o curso Informática para Internet, mas é pouco. Dizer que gosto de futebol, jogos eletrônicos, computador, viajar (apesar de meu curso não ser o melhor pra isso), conversar, saí com os amigos, cinema, comer, ler, escutar música (algo que gosto muito mesmo) e várias outras coisas, ainda acho que não vai me definir tão bem. Sinto que estou em constante mudança, estou tentando pensar diferente da maioria, tentando parar de “falar” e começar a escutar, isso me trouxe alguns pensamentos novos e crenças novas. É difícil ser do jeito que pretendo ser, mas estou indo no caminho, estou parando de ser preconceituoso, de ser “politicamente correto”, aprendi a rir dos meus defeitos mais do que rio dos outros (aliás, é tão bom! Quem ler isso deve experimentar.), aprendi a rir de tudo, a ficar feliz com o nada, pois sendo assim, acredito que tudo pode deixar feliz também. Mas ainda acredito que é pouco, acredito que não alcancei o que pretendo, também acredito que nunca vou alcançar, aliás, penso que ninguém alcança, creio que o feliz da vida é, simplesmente, viver! E isso tem altos e baixos, ninguém é triste nem feliz pra sempre, é essa a graça da vida, o imprevisível. E é esse imprevisível a única coisa que nos pode definir, como ser humano. Pois, em si, ele é mutável, transformado todo momento. Enfim, talvez seja isso que eu possa dizer pra me definir, não tem como, é impossível.</p>
+                </div>
+                </article>  
+                <button class="btn btn-default btnVoltar">Voltar</button>  
+           </div>    
+        </div>
+
+        <footer class="footer">  <!-- igual a section anterior -->    
+            <h5 class="text-muted text-center"> &copy; Desenvolvido por TANJ</h5>
+        </footer>
+    </section>
+    <!-- Fim da Pagina Sobre (Bento) -->
+
+
+    <!-- Início da Pagina Sobre (Indio) -->
+    <section id="SobreIndio" hidden>
+        <header class="page-header">  <!-- igual a section anterior -->    
+            <h1 class="h1 text-center">Lucky Challenge</h1>
+        </header>
+        <div class="container"> <!-- igual a section anterior -->    
+            <div  class="well media" >
+            <aside class="pull-left media-object text-center">
+                <img src="img/indio.jpg" class="img-circle" /><br />
+                <img src="img/adson.jpg" class="img-circle this btnAdson" width="50" />
+                <img src="img/pontes.jpg" class="img-circle this btnPontes" width="50" />
+                <img src="img/bento.jpg" width="50" class=" img-circle this btnBento" />
+            </aside>
+            <article class="media-body">
+            <header class="panel-heading media-heading">
+                        <h1 class="h1">Roberto Júnior</h1>
+                        <small class="text-muted">Desenvolvedor Web e Windows (Trevo de Quatro Folhas)</small>
+                </header>
+            <div class="panel-body scrollbar">        
+                <p class="text-justify">"Quem eu sou?". Me perguntei quando comecei a escrever essa breve descrição, e ri, por que veio na mente "Eu sou Nikon". Brincadeiras aparte,(ou não) afinal o foco é quem eu sou, por mais que eu não consiga me descrever tão fielmente. Mas pelo básico, me chamo José Roberto Bento da Silva Júnior (Sim... meu nome é isso tudo, mas qualquer coisa é só me chamar de Índio), tenho 16 anos, estudo no IFRN, curso Informática para Internet, e moro em Brejinho (Não é brincadeira, moro mesmo em Brejinho). Sou indiferente (É o que dizem), mas logico que brinco com isso. Sou impaciente, mesmo não adiantando ser. Gosto de brincar e zuar (Meus amigos me encorajaram a ser assim, ou não, vish), mas tenho limites. Sou amigável, por mais que eu não seja tão bom em fazer amizades. Gosto de Futebol, Basquete, Games, ler, música... Fui breve ao pé da letra, pois creio que ninguém conhece alguém dessa forma, portanto, quem quiser me conhecer, assim é que não vai ser. Acho que está bom (Tá nada), Vlw o/ (Aos que tiverem a paciência de ler).</p>
+            </div>
+            </article>  
+            <button  class="btn btn-default btnVoltar">Voltar</button>
+            </div>
+        </div>
+
+        <footer class="footer">  <!-- igual a section anterior -->    
+            <h5 class="text-muted text-center"> &copy; Desenvolvido por TANJ</h5>
+        </footer>
+    </section>
+    <!-- Fim da Pagina Sobre (Indio) -->
+
+
+    <!-- Início da Página Jogo Iniciado -->
+    <section id="Jogo" hidden>
+
+    <!-- inicio audios e sources -->
+        <audio class="melody" loop>
+            <source src="msc/melody.mp3">
+            <source src="msc/melody.ogg">
+            <source src="msc/melody.wav">
+            <source src="msc/melody.wma">
+        </audio>
+        <audio class="derrota">
+            <source src="msc/derrota.mp3">
+            <source src="msc/derrota.ogg">
+            <source src="msc/derrota.wav">
+            <source src="msc/derrota.wma">
+        </audio>
+        <audio class="win">
+            <source src="msc/win.mp3">
+            <source src="msc/win.ogg">
+            <source src="msc/win.wav">
+            <source src="msc/win.wma">
+        </audio>
+        <audio class="empate">
+            <source src="msc/empate.mp3">
+            <source src="msc/empate.ogg">
+            <source src="msc/empate.wav">
+            <source src="msc/empate.wma">
+        </audio>
+    <!-- fim audios e sources -->
+
+        <header class="page-header"> <!-- igual a anterior -->
+            <h1 class="h1 text-center">Lucky Challenge</h1>
+        </header>
+
+        <div class="container"> <!-- formatação igual a anterior -->  
+            <div  class="well" > <!-- formatação igual a anterior -->
+                <aside id="menuGame" class="alert alert-warning text-center" style="height: 100px"> <!-- div de escolhas no topo alinhadas ao centro -->
+                    <img src="img/pedra.png" class="img-circle btnPedra" width="75px" title="Escolher Pedra" /> <!-- imagem circular formatada com animações from "transform: rotate(0deg);" to "transform: rotate(360deg);" quando hover ou animação ao contrario quando nohover; possui função sensivel ao click -->
+                    <img src="img/papel.png" class="img-circle btnPapel" width="75px" title="Escolher Papel" /> <!-- igual a anterior -->
+                    <img src="img/tesoura.png" class="img-circle btnTesoura" width="75px" title="Escolher Tesoura" /> <!-- igual a anterior -->
+                    <img src="img/lagarto.png" class="img-circle btnLagarto" width="75px" title="Escolher Lagarto" /> <!-- igual a anterior -->
+                    <img src="img/spock.png" class="img-circle btnSpock" width="75px" title="Escolher Spock" />  <!-- igual a anterior -->
+                </aside>
+            
+                <div class="text-center" style="height: 250px"> <!-- div formatado para centro com altura definida -->
+                    <img src="img/p1.gif" width="150px" /> <!-- gif do player 1 -->
+                    <span class="label label-warning">V.S.</span> <!-- label formatada pelo bootstrap -->
+                    <img src="img/cpu1.gif" id="CPU" width="150px" /> <!-- gif do cpu q varia de 1 a 5 gifs -->
+                </div>
+                <div class="progress progress-striped active"> <!-- progressbar segundo Bootstrap -->
+                    <div class="progress-bar progress-bar-warning"  role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%"> <!-- progressbar varia a "width" de acordo com o progresso do jogo -->
+                        <span>10%</span>
+                    </div>
+                </div>
+                <button  class="btn btn-default btnDesistir">Desistir</button> <!-- btn com mesma função do voltar e resetar os dados -->
+            </div>
+        </div>
+
+        <footer class="footer"> <!-- rodapé -->
+            <h5 class="text-muted text-center"> &copy; Desenvolvido por TANJ</h5>
+        </footer>
+    </section>
+    <!-- Fim da Página Jogo Iniciado -->
+
+
+    <!-- Início da Página Jogo Terminado -->
+    <section id="Resultado" hidden >
+        <header class="page-header"> <!-- cabeçalho -->
+            <h1 class="h1 text-center">Lucky Challenge</h1>
+        </header>
+
+        <div class="container">  <!-- igual a section ajuda -->   
+            <div  class="well media" >  <!-- igual a section ajuda --> 
+            <aside class="pull-left media-object text-center">  <!-- igual a section ajuda --> 
+                <img src="img/over.png" width="150px" class="img-circle" />  <!-- igual a section ajuda --> 
+            </aside> 
+            <article class="media-body">  <!-- igual a section ajuda --> 
+            <header class="panel-heading media-heading">  <!-- igual a section ajuda --> 
+                <h1 class="h1">Fim de Jogo</h1>  <!-- igual a section ajuda --> 
+                <small class="text-muted result"></small>  <!-- igual a section ajuda --> 
+            </header>
+            <div class="panel-body scrollbar">  <!-- igual a section ajuda -->         
+            <p class="text-justify text-result"></p>  <!-- igual a section ajuda --> 
+            </div></article>
+            <p><a href="#" role="button" class="btn btn-default btnVoltar">Ínicio</a> &nbsp   <!-- botão voltar (hide() todos os section e fadeToggle() a section inicio) --> 
+            <a href="#" role="button" class="btn btn-default btnJogar">Jogar Novamente</a></p> <!-- botão voltar (hide() todos os section e fadeToggle() a section jogo) e reseta todo o conteúdo --> 
+            </div>
+        </div>
+
+        <footer class="footer"> <!-- radapé -->
+            <h5 class="text-muted text-center"> &copy; Desenvolvido por TANJ</h5>
+        </footer>
+    </section>
+    <!-- Fim da Página Jogo Terminado -->
+
+
+    <!-- div bg cinza e height: 100% e width: 100% e fixado no topo "top: 0"; e fixado a esquerda "left:0"; sob todos os outros elementos "z-index: 1070" -->
+    <div class="message" hidden>
+        <div class="panel panel-warning box"> <!-- div com height definida e width e formatado pelo Bootstrap -->
+            <div class="panel-heading"><span id="R-t" class="panel-title">Qualquer titulo</span></div> <!-- cabeçalho do panel -->
+            <div class="panel-body"><span id="R-d">Qualquer descrição</span></div>  <!-- body do panel -->
+            <a class="btnOk btn btn-warning" role="button">OK</a> <!-- botão com click(function () { div.message.hide() }); -->
+        </div>
+    </div>
+
+
+    <!-- Chamar scripts segundo Bootstrap -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/func.js"></script>
+</body>
+
+</html>
