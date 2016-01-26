@@ -1,4 +1,10 @@
 # Lucky Challenge
+**Instituição**: Instituto Federal do Rio Grande do Norte
+
+**Curso**: Técnico em Informática para Internet
+
+**Período**: 2º
+
 **Disciplina**: Design Web e Arquitetura da Informação
 
 **Professor**: Fabiano Papaiz
